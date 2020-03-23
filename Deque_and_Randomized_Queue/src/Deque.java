@@ -1,24 +1,12 @@
-import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 public class Deque<Item> implements Iterable<Item> {
 
-    private Node head;
-    private Node tail;
+    private Node head , tail;
     private int size;
 
-    private class Node
-    {
-        Item item;
-        Node next;
-        Node prev;
-    }
-
     public Deque(){
-        head = new Node();
-        tail = new Node();
+        head = tail = null;
         size = 0;
     }
 
@@ -31,110 +19,93 @@ public class Deque<Item> implements Iterable<Item> {
     }
 
     public void addFirst(Item item){
-        if( item == null ){
-            throw new IllegalArgumentException();
+        if(item==null)throw new java.lang.IllegalArgumentException();
+        if(isEmpty()){
+           head = new Node();
+           head.item = item;
+           tail =head;
         }
-        Node node = new Node();
-        node.item = item;
-        if( head == null ){
-            head = tail = node;
-        } else {
-            node.next = head;
-            head.prev = node;
-            head = node;
+        else{
+            Node oldHead = head;
+            head = new Node();
+            head.next = oldHead;
+            oldHead.prev = head;
+            head.item = item;
         }
         size++;
     }
 
     public void addLast(Item item){
-        if( item == null ){
-            throw new IllegalArgumentException();
+        if(item==null)throw new java.lang.IllegalArgumentException();
+        if(isEmpty()){
+            head = new Node();
+            head.item = item;
+            tail = head;
         }
-        Node node = new Node();
-        node.item = item;
-        if( tail == null ){
-            tail = node;
-            head = node;
-        } else {
-            node.prev = tail;
-            tail.next = node;
-            tail = node;
+        else{
+            Node oldTail = tail;
+            tail = new Node();
+            tail.prev = oldTail;
+            oldTail.next=tail;
+            tail.item = item;
         }
         size++;
     }
 
     public Item removeFirst(){
-        if( isEmpty() ){
-            throw new IllegalArgumentException();
-        }
-        Item item = head.item;
-        head = head.next;
-        if( head != null ) {
-            head.prev = null; // remove linkage
+        if(isEmpty())throw new java.util.NoSuchElementException();
+        Item ret = head.item;
+        if( size == 1){
+            head = tail = null;
         } else {
-            tail = null; // ensure both head and tail null
+            head = head.next;
+            head.prev = null;
         }
-        size --;
-        return item;
+        size--;
+        return ret;
     }
 
     public Item removeLast(){
-        if( isEmpty() ){
-            throw new IllegalArgumentException();
-        }
-        Item item = tail.item;
-        tail = tail.prev;
-        if( tail != null ){
-            tail.next = null; // remove linkage
+        if(isEmpty())throw new java.util.NoSuchElementException();
+        Item ret = tail.item;
+        if( size == 1 ) {
+            head = tail = null;
         } else {
-            head = null;
+            tail = tail.prev;
+            tail.next = null;
         }
         size--;
-        return item;
+        return ret;
     }
 
-    @Override
-    public Iterator<Item> iterator() {
-        return new ListIterator();
+    private class Node{
+        Node next;
+        Node prev;
+        Item item;
     }
 
-    private class ListIterator implements Iterator<Item> {
+    public Iterator<Item>  iterator()
+    {return new ListIterator();}
 
+    private class ListIterator implements Iterator<Item>{
         private Node current = head;
 
-        @Override
-        public boolean hasNext() {
-            return current != null && current.next != null;
+        public boolean hasNext(){
+            return current!=null;
         }
 
         public void remove(){
             throw new UnsupportedOperationException();
         }
 
-        @Override
         public Item next() {
-            if( !hasNext() ){
-                throw new NoSuchElementException();
-            }
+            if(!hasNext())throw new java.util.NoSuchElementException();
             Item item = current.item;
             current = current.next;
             return item;
         }
     }
 
-    public static void main(String[] args) {
-        Deque<Integer> deque = new Deque<>();
-        StdOut.println(deque.isEmpty());
-        StdOut.println(deque.size());
-
-        for( int i = 0; i < 10; ++i){
-            deque.addFirst(i);
-        }
-        Iterator<Integer> iterator = deque.iterator();
-        while(iterator.hasNext()){
-            StdOut.println(iterator.next());
-        }
-        StdOut.println(deque.removeLast());
-        StdOut.println(deque.removeFirst());
+    public static void main(String [] args){
     }
 }
