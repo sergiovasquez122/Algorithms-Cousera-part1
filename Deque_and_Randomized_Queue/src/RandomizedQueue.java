@@ -12,7 +12,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     }
     private void resize(int max){
         Item[] temp = (Item[]) new Object[max];
-        for(int i = 0;i < size; ++i){
+        for(int i = 0;i < size; i++){
             temp[i] = items[i];
         }
         items = temp;
@@ -30,8 +30,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     public Item dequeue(){
         if(isEmpty())throw new java.util.NoSuchElementException();
         int index = StdRandom.uniform(size);
+        swap(index,size - 1);
         Item ret = items[--size];
-        swap(index,size);
         items[size] = null;
         if(size>0 && size==items.length/4)resize(items.length/2);
         return ret;
