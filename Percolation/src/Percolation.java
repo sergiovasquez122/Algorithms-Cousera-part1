@@ -30,6 +30,9 @@ public class Percolation {
         for(int[] pos : positions){
             int x = row + pos[0];
             int y = col + pos[1];
+            if(!invalid(x, y) && isOpen(x, y)){
+                UF.connected(N * (row - 1) + col, N*(x - 1) + y);
+            }
         }
         openSites++;
     }
