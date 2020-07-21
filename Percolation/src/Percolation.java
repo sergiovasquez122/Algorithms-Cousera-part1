@@ -1,6 +1,5 @@
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class Percolation {
     private int N;
