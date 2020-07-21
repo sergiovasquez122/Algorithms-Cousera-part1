@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 
@@ -24,7 +25,7 @@ public class PercolationStats {
             int col = StdRandom.uniform(1, n + 1);
             p.open(row, col);
         }
-        return p.numOfOpenSites() / (double)n*n;
+        return p.numOfOpenSites() / (double)(n*n);
     }
 
     public double mean(){
@@ -41,5 +42,16 @@ public class PercolationStats {
 
     public double confidentHi(){
         return confidenceHi;
+    }
+
+    public static void main(String[] args) {
+        int N = 200;
+        int T = 100;
+
+        PercolationStats stats = new PercolationStats(200, 100);
+        StdOut.println(stats.mean);
+        StdOut.println(stats.stdDev);
+        StdOut.println(stats.confidenceLo);
+        StdOut.println(stats.confidenceHi);
     }
 }

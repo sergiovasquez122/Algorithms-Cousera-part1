@@ -12,6 +12,7 @@ public class Percolation {
         if(n <= 0) throw new IllegalArgumentException("N must be greater than 0");
         this.N = n;
         UF = new WeightedQuickUnionUF(n*n + 2);
+        openSites = 0;
         // create sites that are closed initially
         sites = new boolean[N][N];
         // connect the virtual top site to the top row
@@ -30,15 +31,15 @@ public class Percolation {
         for(int[] pos : positions){
             int x = row + pos[0];
             int y = col + pos[1];
-            if(!invalid(x, y) && isOpen(x, y)){
-                UF.connected(N * (row - 1) + col, N*(x - 1) + y);
+            if(valid(x, y) && sites[x - 1][y - 1]){
+                UF.union(N * (row - 1) + col, N*(x - 1) + y);
             }
         }
         openSites++;
     }
 
-    private boolean invalid(int row, int col){
-        return !(row <= 0 || row > N || col <= 0 || col > N);
+    private boolean valid(int row, int col){
+        return row >= 1 && row <= N && col >= 1 && col <= N;
     }
 
     public boolean isOpen(int row, int col){
