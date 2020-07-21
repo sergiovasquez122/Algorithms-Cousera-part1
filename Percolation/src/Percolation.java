@@ -33,7 +33,8 @@ public class Percolation {
 
     public boolean isFull(int row, int col){
         if(row <= 0 || row > N || col <= 0 || col > N) throw new IndexOutOfBoundsException("Row or Col index out of bounds");
-        throw new NotImplementedException();
+        if(!isOpen(row, col)) return false;
+        return UF.connected(0, N * (row - 1) + col);
     }
 
     public int numOfOpenSites(){
