@@ -46,13 +46,15 @@ public class PercolationStats {
     }
 
     public static void main(String[] args) {
-        int N = 200;
-        int T = 100;
+        int N = Integer.parseInt(args[0]);
+        int T = Integer.parseInt(args[1]);
 
-        PercolationStats stats = new PercolationStats(200, 100);
-        StdOut.println(stats.mean);
-        StdOut.println(stats.stdDev);
-        StdOut.println(stats.confidenceLo);
-        StdOut.println(stats.confidenceHi);
+        PercolationStats stats = new PercolationStats(N, T);
+
+        String confidence = "[" + stats.confidenceLo() + ", " + stats.confidenceHi() + "]";
+        StdOut.println("mean                    = " + stats.mean());
+        StdOut.println("stddev                  = " + stats.stddev());
+        StdOut.println("95% confidence interval = " + confidence);
+
     }
 }
