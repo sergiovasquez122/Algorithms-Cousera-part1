@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
@@ -10,12 +11,15 @@ public class Percolation {
     public Percolation(int n){
         if(n <= 0) throw new IllegalArgumentException("N must be greater than 0");
         this.N = n;
-        UF = new WeightedQuickUnionUF(n + 2);
+        UF = new WeightedQuickUnionUF(n*n + 2);
         // create sites that are closed initially
         sites = new boolean[N][N];
         // connect the virtual top site to the top row
         for(int i = 1;i <= N;++i)
             UF.union(0, i);
+        int lastSite = N*N;
+        for(int i = lastSite;i > lastSite - N;--i)
+            UF.union(N*N + 1, i);
     }
 
     public void open(int row, int col){
@@ -41,6 +45,7 @@ public class Percolation {
     }
 
     public static void main(String[] args) {
-
+        Percolation percolation = new Percolation(2);
+        StdOut.println(percolation.isOpen(1, 1));
     }
 }
