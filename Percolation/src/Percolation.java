@@ -24,6 +24,18 @@ public class Percolation {
 
     public void open(int row, int col){
         if(row <= 0 || row > N || col <= 0 || col > N) throw new IndexOutOfBoundsException("Row or Col index out of bounds");
+        if(isOpen(row, col)) return;
+        sites[row - 1][col - 1] = true;
+        int positions[][] = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        for(int[] pos : positions){
+            int x = row + pos[0];
+            int y = col + pos[1];
+        }
+        openSites++;
+    }
+
+    private boolean invalid(int row, int col){
+        return !(row <= 0 || row > N || col <= 0 || col > N);
     }
 
     public boolean isOpen(int row, int col){
