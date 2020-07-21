@@ -11,6 +11,8 @@ public class Percolation {
         if(n <= 0) throw new IllegalArgumentException("N must be greater than 0");
         this.N = n;
         UF = new WeightedQuickUnionUF(n + 2);
+        // create sites that are closed initially
+        sites = new boolean[N][N];
         // connect the virtual top site to the top row
         for(int i = 1;i <= N;++i)
             UF.union(0, i);
