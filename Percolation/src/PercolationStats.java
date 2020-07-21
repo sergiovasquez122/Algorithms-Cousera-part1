@@ -9,6 +9,7 @@ public class PercolationStats {
     private double stdDev;
 
     public PercolationStats(int n, int trials){
+        if(n <= 0 || trials <= 0) throw new IllegalArgumentException();
         double[] openSites = new double[trials];
         for(int i = 0;i < trials;++i)
             openSites[i] = trial(n);

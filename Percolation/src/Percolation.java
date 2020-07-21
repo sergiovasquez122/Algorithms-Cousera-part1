@@ -23,7 +23,7 @@ public class Percolation {
     }
 
     public void open(int row, int col){
-        if(row <= 0 || row > N || col <= 0 || col > N) throw new IndexOutOfBoundsException("Row or Col index out of bounds");
+        if(row <= 0 || row > N || col <= 0 || col > N) throw new IllegalArgumentException("Row or Col index out of bounds");
         if(isOpen(row, col)) return;
         sites[row - 1][col - 1] = true;
         int positions[][] = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
@@ -42,12 +42,12 @@ public class Percolation {
     }
 
     public boolean isOpen(int row, int col){
-        if(row <= 0 || row > N || col <= 0 || col > N) throw new IndexOutOfBoundsException("Row or Col index out of bounds");
+        if(row <= 0 || row > N || col <= 0 || col > N) throw new IllegalArgumentException("Row or Col index out of bounds");
         return sites[row - 1][col - 1];
     }
 
     public boolean isFull(int row, int col){
-        if(row <= 0 || row > N || col <= 0 || col > N) throw new IndexOutOfBoundsException("Row or Col index out of bounds");
+        if(row <= 0 || row > N || col <= 0 || col > N) throw new IllegalArgumentException("Row or Col index out of bounds");
         if(!isOpen(row, col)) return false;
         return UF.connected(0, N * (row - 1) + col);
     }
