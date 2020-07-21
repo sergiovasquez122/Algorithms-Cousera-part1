@@ -8,6 +8,7 @@ public class Percolation {
     private WeightedQuickUnionUF UF;
 
     public Percolation(int n){
+        if(n <= 0) throw new IllegalArgumentException("N must be greater than 0");
     }
 
     public void open(int row, int col){
