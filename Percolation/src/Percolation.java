@@ -1,24 +1,31 @@
+import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class Percolation {
-    public Percolation(int n){
+    private int N;
+    private boolean[] sites;
+    private int openSites;
+    private WeightedQuickUnionUF UF;
 
+    public Percolation(int n){
     }
 
     public void open(int row, int col){
-
+        if(row <= 0 || row > N || col <= 0 || col > N) throw new IndexOutOfBoundsException("Row or Col index out of bounds");
     }
 
     public boolean isOpen(int row, int col){
+        if(row <= 0 || row > N || col <= 0 || col > N) throw new IndexOutOfBoundsException("Row or Col index out of bounds");
         throw new NotImplementedException();
     }
 
     public boolean isFull(int row, int col){
+        if(row <= 0 || row > N || col <= 0 || col > N) throw new IndexOutOfBoundsException("Row or Col index out of bounds");
         throw new NotImplementedException();
     }
 
     public int numOfOpenSites(){
-        throw new NotImplementedException();
+        return openSites;
     }
 
     public boolean percolates(){
