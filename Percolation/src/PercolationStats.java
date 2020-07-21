@@ -25,7 +25,7 @@ public class PercolationStats {
             int col = StdRandom.uniform(1, n + 1);
             p.open(row, col);
         }
-        return p.numOfOpenSites() / (double)(n*n);
+        return p.numberOfOpenSites() / (double)(n*n);
     }
 
     public double mean(){
@@ -40,7 +40,7 @@ public class PercolationStats {
         return confidenceLo;
     }
 
-    public double confidentHi(){
+    public double confidenceHi(){
         return confidenceHi;
     }
 

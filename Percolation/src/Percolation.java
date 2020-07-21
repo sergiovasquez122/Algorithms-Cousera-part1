@@ -52,7 +52,7 @@ public class Percolation {
         return UF.connected(0, N * (row - 1) + col);
     }
 
-    public int numOfOpenSites(){
+    public int numberOfOpenSites(){
         return openSites;
     }
 
