@@ -4,22 +4,20 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 public class Percolation {
     private int N;
     private boolean[][] sites;
+    private boolean percolates = false;
     private int openSites;
     private WeightedQuickUnionUF UF;
 
     public Percolation(int n){
         if(n <= 0) throw new IllegalArgumentException("N must be greater than 0");
         this.N = n;
-        UF = new WeightedQuickUnionUF(n*n + 2);
+        UF = new WeightedQuickUnionUF(n*n + 1);
         openSites = 0;
         // create sites that are closed initially
         sites = new boolean[N][N];
         // connect the virtual top site to the top row
         for (int i = 1; i <= N; ++i)
             UF.union(0, i);
-        int lastSite = N * N;
-        for (int i = lastSite; i > lastSite - N; --i)
-            UF.union(N * N + 1, i);
     }
 
     public void open(int row, int col){
@@ -32,6 +30,9 @@ public class Percolation {
             int y = col + pos[1];
             if(valid(x, y) && sites[x - 1][y - 1]){
                 UF.union(N * (row - 1) + col, N*(x - 1) + y);
+                if((row == N || col == N) && UF.find(N * (row - 1) + col) == 0){
+                    percolates = true;
+                }
             }
         }
         openSites++;
@@ -57,7 +58,7 @@ public class Percolation {
     }
 
     public boolean percolates(){
-        return UF.connected(0, N * N + 1);
+        return percolates;
     }
 
     public static void main(String[] args) {
