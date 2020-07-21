@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44013144-dd28-43d4-ab68-125b82cc454f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Percolation/src/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/src/PercolationStats.java" afterDir="false" />
-    </list>
+    <list default="true" id="44013144-dd28-43d4-ab68-125b82cc454f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +53,8 @@
       <file leaf-file-name="PercolationStats.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Percolation/src/PercolationStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
+            <state relative-caret-position="214">
+              <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#783#784#0" expanded="true" />
@@ -68,6 +66,37 @@
                 <element signature="e#1198#1199#0" expanded="true" />
                 <element signature="e#1223#1224#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StdOut.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/algs4/algs4.jar!/edu/princeton/cs/algs4/StdOut.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintWriter.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/PrintWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="963" selection-start-line="963" selection-end-line="963" />
+              <folding>
+                <element signature="e#29026#29027#0" expanded="true" />
+                <element signature="e#29072#29073#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Formatter.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Formatter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="2559" selection-start-line="2559" selection-end-line="2559" />
             </state>
           </provider>
         </entry>
@@ -112,11 +141,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="244" />
-    <option name="y" value="71" />
-    <option name="width" value="653" />
-    <option name="height" value="773" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="651" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -253,19 +282,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="24" width="651" height="744" extended-state="4" />
     <layout>
       <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.17918622" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.3658147" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.35119048" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.35119048" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.31415242" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3281493" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39880952" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -405,10 +433,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/algs4/algs4.jar!/edu/princeton/cs/algs4/StdOut.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/PrintWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="963" selection-start-line="963" selection-end-line="963" />
+          <folding>
+            <element signature="e#29026#29027#0" expanded="true" />
+            <element signature="e#29072#29073#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Formatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="2559" selection-start-line="2559" selection-end-line="2559" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Percolation/src/PercolationStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
+        <state relative-caret-position="214">
+          <caret line="53" column="89" selection-start-line="53" selection-start-column="89" selection-end-line="53" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#783#784#0" expanded="true" />

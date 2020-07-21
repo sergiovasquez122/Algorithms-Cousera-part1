@@ -15,11 +15,13 @@ public class Percolation {
         // create sites that are closed initially
         sites = new boolean[N][N];
         // connect the virtual top site to the top row
-        for(int i = 1;i <= N;++i)
-            UF.union(0, i);
-        int lastSite = N*N;
-        for(int i = lastSite;i > lastSite - N;--i)
-            UF.union(N*N + 1, i);
+        if(N != 1) {
+            for (int i = 1; i <= N; ++i)
+                UF.union(0, i);
+            int lastSite = N * N;
+            for (int i = lastSite; i > lastSite - N; --i)
+                UF.union(N * N + 1, i);
+        }
     }
 
     public void open(int row, int col){
