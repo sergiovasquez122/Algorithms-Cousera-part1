@@ -15,8 +15,8 @@ public class PercolationStats {
             openSites[i] = trial(n);
         mean = StdStats.mean(openSites);
         stdDev = StdStats.stddev(openSites);
-        confidenceLo = mean - (1.96 * Math.sqrt(stdDev)) / Math.sqrt(trials);
-        confidenceHi = mean + (1.96 * Math.sqrt(stdDev)) / Math.sqrt(trials);
+        confidenceLo = mean - (1.96 * Math.sqrt(stdDev * stdDev)) / Math.sqrt(trials);
+        confidenceHi = mean + (1.96 * Math.sqrt(stdDev * stdDev)) / Math.sqrt(trials);
     }
 
     private double trial(int n){
