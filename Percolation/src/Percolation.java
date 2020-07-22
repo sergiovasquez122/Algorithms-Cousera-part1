@@ -2,10 +2,10 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
-    private int N;
+    private final int N;
     private boolean[][] sites;
     private int openSites;
-    private WeightedQuickUnionUF UF;
+    private final WeightedQuickUnionUF UF;
 
     public Percolation(int n){
         if(n <= 0) throw new IllegalArgumentException("N must be greater than 0");
