@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44013144-dd28-43d4-ab68-125b82cc454f" name="Default" comment="" />
+    <list default="true" id="44013144-dd28-43d4-ab68-125b82cc454f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Percolation/production/Algorithms-Cousera-part1/Percolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/production/Algorithms-Cousera-part1/Percolation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Percolation/src/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/src/Percolation.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,21 +14,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PercolationVisualizer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PercolationVisualizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Percolation/src/PercolationVisualizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
+            <state relative-caret-position="244">
               <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wayne98.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Percolation/wayne98.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="input2.png" pinned="false" current-in-tab="false">
@@ -53,19 +51,29 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Percolation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Percolation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Percolation/src/Percolation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="381">
+              <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1389#1390#0" expanded="true" />
                 <element signature="e#1456#1457#0" expanded="true" />
                 <element signature="e#1984#1985#0" expanded="true" />
                 <element signature="e#2016#2017#0" expanded="true" />
-                <element signature="e#2050#2051#0" expanded="true" />
-                <element signature="e#2099#2100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InteractivePercolationVisualizer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Percolation/src/InteractivePercolationVisualizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-89">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,8 +82,8 @@
       <file leaf-file-name="PercolationStats.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Percolation/src/PercolationStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            <state relative-caret-position="720">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,12 +94,8 @@
       <file leaf-file-name="WeightedQuickUnionUF.class" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/algs4/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="600">
               <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-              <folding>
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1030#1031#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -120,21 +124,23 @@
         <option value="$PROJECT_DIR$/Percolation/src/PercolationVisualizer.java" />
         <option value="$PROJECT_DIR$/Deque_and_Randomized_Queue/PercolationVisualizer.java" />
         <option value="$PROJECT_DIR$/Percolation/src/PercolationStats.java" />
+        <option value="$PROJECT_DIR$/Percolation/src/InteractivePercolationVisualizer.java" />
         <option value="$PROJECT_DIR$/Percolation/src/Percolation.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="649" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-54" />
+    <option name="y" value="-4" />
+    <option name="width" value="651" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,7 +169,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,14 +196,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.PercolationVisualizer">
+    <configuration name="InteractivePercolationVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InteractivePercolationVisualizer" />
+      <module name="Algorithms-Cousera-part1" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/Percolation/input1-no.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
     <configuration name="Percolation (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Percolation" />
       <module name="Algorithms-Cousera-part1" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="Percolation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Percolation" />
-      <module name="Percolation" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration name="PercolationStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -210,7 +216,7 @@
     <configuration name="PercolationVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PercolationVisualizer" />
       <module name="Algorithms-Cousera-part1" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/Percolation/input50.txt" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/Percolation/input1.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -237,17 +243,17 @@
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
     <list>
-      <item itemvalue="Application.Percolation" />
       <item itemvalue="Application.Percolation (1)" />
       <item itemvalue="Application.PercolationStats" />
       <item itemvalue="Application.PercolationVisualizer" />
+      <item itemvalue="Application.InteractivePercolationVisualizer" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.PercolationVisualizer" />
+        <item itemvalue="Application.InteractivePercolationVisualizer" />
         <item itemvalue="Application.PercolationStats" />
         <item itemvalue="Application.Percolation (1)" />
-        <item itemvalue="Application.Percolation" />
       </list>
     </recent_temporary>
   </component>
@@ -266,9 +272,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.3654147" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.25821596" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
@@ -276,28 +283,16 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.35119048" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32886904" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3139881" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39880952" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.3658147" />
-      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.35119048" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3281493" />
-      <window_info id="Designer" order="1" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39880952" />
-      <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Messages" order="3" />
-      <window_info id="Favorites" order="0" side_tool="true" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -308,7 +303,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Percolation/src/Percolation.java</url>
-          <line>64</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -323,13 +318,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/PrintWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="963" selection-start-line="963" selection-end-line="963" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Formatter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -389,10 +377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -426,8 +410,6 @@
             <element signature="e#1456#1457#0" expanded="true" />
             <element signature="e#1984#1985#0" expanded="true" />
             <element signature="e#2016#2017#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -452,8 +434,6 @@
             <element signature="e#1456#1457#0" expanded="true" />
             <element signature="e#1984#1985#0" expanded="true" />
             <element signature="e#2016#2017#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -478,8 +458,6 @@
             <element signature="e#1456#1457#0" expanded="true" />
             <element signature="e#1984#1985#0" expanded="true" />
             <element signature="e#2016#2017#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -497,12 +475,8 @@
     <entry file="file://$PROJECT_DIR$/Percolation/production/Percolation/Percolation.class" />
     <entry file="jar://$USER_HOME$/algs4/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="600">
           <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -530,8 +504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Percolation/src/PercolationStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="720">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -583,10 +557,10 @@
     <entry file="file://$PROJECT_DIR$/Percolation/input50.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Percolation/src/PercolationVisualizer.java">
+    <entry file="file://$PROJECT_DIR$/Percolation/src/InteractivePercolationVisualizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+        <state relative-caret-position="-89">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -595,16 +569,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Percolation/src/Percolation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="381">
+          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1389#1390#0" expanded="true" />
             <element signature="e#1456#1457#0" expanded="true" />
             <element signature="e#1984#1985#0" expanded="true" />
             <element signature="e#2016#2017#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Percolation/src/PercolationVisualizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
