@@ -1,4 +1,5 @@
 import edu.princeton.cs.algs4.Point2D;
+import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.RectHV;
 import edu.princeton.cs.algs4.StdDraw;
 
@@ -27,18 +28,19 @@ public class KdTree {
             size++;
             return new Node(p, new RectHV(xmin, ymin, xmax, ymax));
         }
-        if(isVerticalOrientation){
-            int cmp = Double.compare(p.x(), x.p.x());
-            if(cmp < 0){
-                x.lb = insert(x.lb, p, xmin, ymin,x.p.x(), ymax, !isVerticalOrientation);
-            } else if(cmp > 0){
-                x.rt = insert(x.rt, p, x.p.x(), ymin, xmax, ymax, !isVerticalOrientation);
+        int cmp;
+        if(isVerticalOrientation) cmp = Double.compare(p.x(), x.p.x());
+        else cmp = Double.compare(p.y(), x. p.y());
+        if(cmp < 0){
+            if(isVerticalOrientation) {
+                x.lb = insert(x.lb, p, xmin, ymin, x.p.x(), ymax, !isVerticalOrientation);
+            } else {
+                x.lb = insert(x.lb, p, xmin, ymin, xmax, x.p.y(), !isVerticalOrientation);
             }
         } else {
-            int cmp = Double.compare(p.y(), x.p.y());
-            if(cmp < 0){
-                x.lb = insert(x.lb, p, xmin, ymin, xmax, x.p.y(), !isVerticalOrientation);
-            } else if(cmp > 0){
+            if(isVerticalOrientation){
+                x.rt = insert(x.rt, p, x.p.x(), ymin, xmax, ymax, !isVerticalOrientation);
+            } else{
                 x.rt = insert(x.rt, p, xmin, x.p.y(), xmax, ymax, !isVerticalOrientation);
             }
         }
@@ -89,7 +91,17 @@ public class KdTree {
 
     public Iterable<Point2D> range(RectHV rect){
         if(rect == null) throw new IllegalArgumentException();
-        return null;
+        Queue<Point2D> on_queue = new Queue<>();
+        range(on_queue, rect, root, true);
+        return on_queue;
+    }
+
+    private void range(Queue<Point2D> on_queue, RectHV rect, Node x, boolean isVerticalOrientation){
+        if(x!=null && rect.intersects(x.rect)){
+            if(rect.contains(x.p)) on_queue.enqueue(x.p);
+            range(on_queue, rect, x.lb, !isVerticalOrientation);
+            range(on_queue, rect, x.rt, !isVerticalOrientation);
+        }
     }
 
     public Point2D nearest(Point2D p){

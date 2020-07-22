@@ -12,10 +12,7 @@
  *
  ******************************************************************************/
 
-import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.Point2D;
-import edu.princeton.cs.algs4.RectHV;
-import edu.princeton.cs.algs4.StdDraw;
+import edu.princeton.cs.algs4.*;
 
 public class RangeSearchVisualizer {
 
@@ -33,6 +30,8 @@ public class RangeSearchVisualizer {
             kdtree.insert(p);
             brute.insert(p);
         }
+        StdOut.println(kdtree.size());
+        StdOut.println(brute.size());
 
         double x0 = 0.0, y0 = 0.0;      // initial endpoint of rectangle
         double x1 = 0.0, y1 = 0.0;      // current location of mouse
