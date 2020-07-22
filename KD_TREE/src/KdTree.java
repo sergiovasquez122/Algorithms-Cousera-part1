@@ -2,16 +2,18 @@ import edu.princeton.cs.algs4.Point2D;
 import edu.princeton.cs.algs4.RectHV;
 
 public class KdTree {
-    public KdTree(){
 
+    private Node root = null;
+    private int size = 0;
+    public KdTree(){
     }
 
     public boolean isEmpty(){
-        return false;
+        return root == null;
     }
 
     public int size(){
-        return 0;
+        return size;
     }
 
     public void insert(Point2D p){
@@ -39,5 +41,12 @@ public class KdTree {
 
     public static void main(String[] args) {
 
+    }
+
+    private static class Node{
+        private Point2D p;
+        private RectHV rect;
+        private Node lb;
+        private Node rt;
     }
 }
