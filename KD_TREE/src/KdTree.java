@@ -1,5 +1,6 @@
 import edu.princeton.cs.algs4.Point2D;
 import edu.princeton.cs.algs4.RectHV;
+import edu.princeton.cs.algs4.StdDraw;
 
 public class KdTree {
 
@@ -64,6 +65,25 @@ public class KdTree {
     }
 
     public void draw(){
+        draw(root, true);
+    }
+
+    public void draw(Node x, boolean isVerticalOrientation){
+        if(x == null) return;
+        StdDraw.setPenColor(StdDraw.BLACK);
+        StdDraw.setPenRadius(0.01);
+        x.p.draw();
+        if(isVerticalOrientation){
+            StdDraw.setPenColor(StdDraw.RED);
+            StdDraw.setPenRadius();
+            StdDraw.line(x.p.x(), x.rect.ymin(), x.p.x(), x.rect.ymax());
+        } else {
+            StdDraw.setPenColor(StdDraw.RED);
+            StdDraw.setPenRadius();
+            StdDraw.line(x.rect.xmin(), x.p.y(), x.rect.xmax(), x.p.y());
+        }
+        draw(x.lb, !isVerticalOrientation);
+        draw(x.rt, !isVerticalOrientation);
     }
 
     public Iterable<Point2D> range(RectHV rect){
