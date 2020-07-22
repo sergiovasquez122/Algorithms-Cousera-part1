@@ -28,14 +28,14 @@ public class KdTree {
             return new Node(p, new RectHV(xmin, ymin, xmax, ymax));
         }
         if(isVerticalOrientation){
-            int cmp = Double.compare(x.p.x(), p.x());
+            int cmp = Double.compare(p.x(), x.p.x());
             if(cmp < 0){
                 x.lb = insert(x.lb, p, xmin, ymin,x.p.x(), ymax, !isVerticalOrientation);
             } else if(cmp > 0){
                 x.rt = insert(x.rt, p, x.p.x(), ymin, xmax, ymax, !isVerticalOrientation);
             }
         } else {
-            int cmp = Double.compare(x.p.y(), p.y());
+            int cmp = Double.compare(p.y(), x.p.y());
             if(cmp < 0){
                 x.lb = insert(x.lb, p, xmin, ymin, xmax, x.p.y(), !isVerticalOrientation);
             } else if(cmp > 0){
@@ -78,12 +78,13 @@ public class KdTree {
             StdDraw.setPenRadius();
             StdDraw.line(x.p.x(), x.rect.ymin(), x.p.x(), x.rect.ymax());
         } else {
-            StdDraw.setPenColor(StdDraw.RED);
+            StdDraw.setPenColor(StdDraw.BLUE);
             StdDraw.setPenRadius();
             StdDraw.line(x.rect.xmin(), x.p.y(), x.rect.xmax(), x.p.y());
         }
-        draw(x.lb, !isVerticalOrientation);
-        draw(x.rt, !isVerticalOrientation);
+        isVerticalOrientation = !isVerticalOrientation;
+        draw(x.lb, isVerticalOrientation);
+        draw(x.rt, isVerticalOrientation);
     }
 
     public Iterable<Point2D> range(RectHV rect){
@@ -94,10 +95,6 @@ public class KdTree {
     public Point2D nearest(Point2D p){
         if(p == null) throw new IllegalArgumentException();
         return null;
-    }
-
-    public static void main(String[] args) {
-
     }
 
     private static class Node{
