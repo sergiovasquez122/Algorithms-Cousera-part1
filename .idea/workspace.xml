@@ -48,7 +48,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Percolation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Percolation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Percolation/src/Percolation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
@@ -59,6 +59,28 @@
                 <element signature="e#1456#1457#0" expanded="true" />
                 <element signature="e#1984#1985#0" expanded="true" />
                 <element signature="e#2016#2017#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PointSET.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/KD_TREE/src/PointSET.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#126#127#0" expanded="true" />
+                <element signature="e#154#155#0" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,19 +102,10 @@
         <entry file="file://$PROJECT_DIR$/Percolation/src/PercolationStats.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-61">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeightedQuickUnionUF.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/algs4/algs4.jar!/edu/princeton/cs/algs4/WeightedQuickUnionUF.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -123,14 +136,15 @@
         <option value="$PROJECT_DIR$/Percolation/src/InteractivePercolationVisualizer.java" />
         <option value="$PROJECT_DIR$/Percolation/src/PercolationStats.java" />
         <option value="$PROJECT_DIR$/Percolation/src/Percolation.java" />
+        <option value="$PROJECT_DIR$/KD_TREE/src/PointSET.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="483" />
-    <option name="y" value="391" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
     <option name="width" value="651" />
-    <option name="height" value="737" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -148,17 +162,12 @@
             <path>
               <item name="Algorithms-Cousera-part1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithms-Cousera-part1" type="462c0819:PsiDirectoryNode" />
-              <item name="Deque_and_Randomized_Queue" type="462c0819:PsiDirectoryNode" />
+              <item name="KD_TREE" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithms-Cousera-part1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithms-Cousera-part1" type="462c0819:PsiDirectoryNode" />
-              <item name="Percolation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithms-Cousera-part1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithms-Cousera-part1" type="462c0819:PsiDirectoryNode" />
-              <item name="Percolation" type="462c0819:PsiDirectoryNode" />
+              <item name="KD_TREE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -268,10 +277,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
+    <frame x="65" y="24" width="651" height="744" extended-state="4" />
     <layout>
       <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.25821596" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.31948882" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
@@ -279,7 +288,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.35119048" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3139881" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3281493" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39880952" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -314,13 +323,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="2559" selection-start-line="2559" selection-end-line="2559" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Percolation/input1-no.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -566,7 +568,7 @@
     <entry file="file://$PROJECT_DIR$/Percolation/src/PercolationStats.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-61">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -583,6 +585,26 @@
             <element signature="e#1456#1457#0" expanded="true" />
             <element signature="e#1984#1985#0" expanded="true" />
             <element signature="e#2016#2017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KD_TREE/src/PointSET.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
           </folding>
         </state>
       </provider>

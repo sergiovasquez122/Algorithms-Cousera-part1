@@ -15,10 +15,11 @@ public class PointSET {
     }
 
     public void insert(Point2D p){
-
+        if(p == null) throw new IllegalArgumentException();
     }
 
     public boolean contains(Point2D p){
+        if(p == null) throw new IllegalArgumentException();
         return false;
     }
 
@@ -27,10 +28,12 @@ public class PointSET {
     }
 
     public Iterable<Point2D> range(RectHV rect){
+        if(rect == null) throw new IllegalArgumentException();
         return null;
     }
 
     public Point2D nearest(Point2D p){
+        if(p == null) throw new IllegalArgumentException();
         return null;
     }
 
