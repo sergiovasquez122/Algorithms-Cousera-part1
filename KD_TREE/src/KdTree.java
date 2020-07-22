@@ -57,8 +57,8 @@ public class KdTree {
     private Point2D get(Node x, Point2D p, boolean isVerticalOrientation){
         if(x == null) return null;
         int cmp;
-        if(isVerticalOrientation) cmp = Double.compare(x.p.x(), p.x());
-        else cmp = Double.compare(x.p.y(), p.y());
+        if(isVerticalOrientation) cmp = Double.compare(p.x(), x.p.x());
+        else cmp = Double.compare(p.y(), x.p.y());
         if(cmp == 0) return x.p;
         else if(cmp < 0) return get(x.lb, p, !isVerticalOrientation);
         else return get(x.rt, p, !isVerticalOrientation);
