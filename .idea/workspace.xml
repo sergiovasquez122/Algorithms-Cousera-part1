@@ -62,16 +62,14 @@
       <file leaf-file-name="KdTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KD_TREE/src/KdTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+            <state relative-caret-position="345">
+              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#91#92#0" expanded="true" />
-                <element signature="e#114#115#0" expanded="true" />
-                <element signature="e#147#148#0" expanded="true" />
-                <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#184#185#0" expanded="true" />
+                <element signature="e#215#216#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -334,9 +332,9 @@
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.36607143" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.31259722" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.31259722" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.33167496" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.33167496" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" visible="true" weight="0.0" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -677,16 +675,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KD_TREE/src/KdTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        <state relative-caret-position="345">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#91#92#0" expanded="true" />
-            <element signature="e#114#115#0" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
