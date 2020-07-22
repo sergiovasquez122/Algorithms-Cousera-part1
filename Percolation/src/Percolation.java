@@ -49,7 +49,7 @@ public class Percolation {
     public boolean isFull(int row, int col){
         if(row <= 0 || row > N || col <= 0 || col > N) throw new IllegalArgumentException("Row or Col index out of bounds");
         if(!isOpen(row, col)) return false;
-        return UF.connected(0, N * (row - 1) + col);
+        return UF.find(0) == UF.find(N * (row - 1) + col);
     }
 
     public int numberOfOpenSites(){
@@ -58,7 +58,7 @@ public class Percolation {
 
     public boolean percolates(){
         if(N == 1) return sites[0][0];
-        return UF.connected(0, N * N + 1);
+        return UF.find(0) == UF.find(N * N  + 1);
     }
 
     public static void main(String[] args) {
