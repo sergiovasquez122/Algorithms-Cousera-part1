@@ -46,7 +46,21 @@ public class KdTree {
 
     public boolean contains(Point2D p){
         if(p == null) throw new IllegalArgumentException();
-        return false;
+        return get(p) != null;
+    }
+
+    private Point2D get(Point2D p){
+        return get(root, p, true);
+    }
+
+    private Point2D get(Node x, Point2D p, boolean isVerticalOrientation){
+        if(x == null) return null;
+        int cmp;
+        if(isVerticalOrientation) cmp = Double.compare(x.p.x(), p.x());
+        else cmp = Double.compare(x.p.y(), p.y());
+        if(cmp == 0) return x.p;
+        else if(cmp < 0) return get(x.lb, p, !isVerticalOrientation);
+        else return get(x.rt, p, !isVerticalOrientation);
     }
 
     public void draw(){
