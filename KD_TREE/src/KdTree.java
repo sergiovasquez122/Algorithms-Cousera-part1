@@ -23,7 +23,7 @@ public class KdTree {
         root = insert(root, p, 0, 0, 1, 1, true);
     }
 
-    public Node insert(Node x,Point2D p, double xmin, double ymin, double xmax, double ymax,boolean isVerticalOrientation){
+    private Node insert(Node x,Point2D p, double xmin, double ymin, double xmax, double ymax,boolean isVerticalOrientation){
         if(x == null){
             size++;
             return new Node(p, new RectHV(xmin, ymin, xmax, ymax));
@@ -70,7 +70,7 @@ public class KdTree {
         draw(root, true);
     }
 
-    public void draw(Node x, boolean isVerticalOrientation){
+    private void draw(Node x, boolean isVerticalOrientation){
         if(x == null) return;
         StdDraw.setPenColor(StdDraw.BLACK);
         StdDraw.setPenRadius(0.01);
@@ -110,7 +110,7 @@ public class KdTree {
         return nearest(root, p, root, true).p;
     }
 
-    public Node nearest(Node x, Point2D p, Node champion, boolean isVertical){
+    private Node nearest(Node x, Point2D p, Node champion, boolean isVertical){
         if(x == null) return champion;
         double distance1 = x.p.distanceTo(p);
         double distance2 = champion.p.distanceTo(p);
