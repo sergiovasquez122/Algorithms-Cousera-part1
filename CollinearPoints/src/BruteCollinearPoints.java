@@ -8,15 +8,22 @@ public class BruteCollinearPoints {
 
     public BruteCollinearPoints(Point[] points){
         if(points == null) throw new IllegalArgumentException();
-        for(Point p : points){
-            if(p == null){
+        for(int i = 0;i < points.length;++i){
+            if(points[i] == null){
                 throw new IllegalArgumentException();
             }
         }
+
+        for(int i = 1;i < points.length;++i){
+            if(points[i].compareTo(points[i - 1]) == 0){
+                throw new IllegalArgumentException();
+            }
+        }
+
         lineSegments = new Queue<>();
-        for(int i = 0;i < points.length;++i){
-            for(int j = i + 1;j < points.length;++j){
-                for(int k = j + 1;k < points.length;++k){
+        for(int i = 0;i < points.length - 3;++i){
+            for(int j = i + 1;j < points.length - 2;++j){
+                for(int k = j + 1;k < points.length - 1;++k){
                     for(int l = k + 1;l < points.length;++l){
                         Point p = points[i];
                         Point q = points[j];
