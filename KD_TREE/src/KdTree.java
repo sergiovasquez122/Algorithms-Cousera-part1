@@ -106,7 +106,38 @@ public class KdTree {
 
     public Point2D nearest(Point2D p){
         if(p == null) throw new IllegalArgumentException();
-        return null;
+        if(root == null) return null;
+        return nearest(root, p, root, true).p;
+    }
+
+    public Node nearest(Node x, Point2D p, Node champion, boolean isVertical){
+        if(x == null) return champion;
+        double distance1 = x.p.distanceTo(p);
+        double distance2 = champion.p.distanceTo(p);
+        int cmp = Double.compare(distance1, distance2);
+        if(cmp < 0) champion = x;
+        if(isVertical){
+            if(Double.compare(p.x(), x.p.x()) < 0){
+                Node prevChampion = champion;
+                champion = nearest(x.lb, p, champion, !isVertical);
+                champion = nearest(x.rt, p, champion, !isVertical);
+            } else{
+                Node prevChampion = champion;
+                champion = nearest(x.rt, p, champion, !isVertical);
+                champion = nearest(x.lb, p, champion, !isVertical);
+            }
+        } else{
+            if(Double.compare(p.y(), x.p.y()) < 0){
+                Node prevChampion = champion;
+                champion = nearest(x.lb, p, champion, !isVertical);
+                champion = nearest(x.rt, p, champion, !isVertical);
+            } else{
+                Node prevChampion = champion;
+                champion = nearest(x.rt, p, champion, !isVertical);
+                champion = nearest(x.lb, p, champion, !isVertical);
+            }
+        }
+        return champion;
     }
 
     private static class Node{
