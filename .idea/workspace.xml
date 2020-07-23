@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44013144-dd28-43d4-ab68-125b82cc454f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollinearPoints/src/BruteCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/CollinearPoints/src/BruteCollinearPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollinearPoints/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/CollinearPoints/src/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/production/CollinearPoints/BruteCollinearPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/production/CollinearPoints/BruteCollinearPoints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/production/CollinearPoints/Point$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/production/CollinearPoints/Point$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/production/CollinearPoints/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/production/CollinearPoints/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollinearPoints/src/FastCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/CollinearPoints/src/FastCollinearPoints.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +16,8 @@
       <file leaf-file-name="BruteCollinearPoints.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CollinearPoints/src/BruteCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="270">
+              <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1773#1774#0" expanded="true" />
@@ -32,9 +27,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input40.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CollinearPoints/input40.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="FastCollinearPoints.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CollinearPoints/src/FastCollinearPoints.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LineSegment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CollinearPoints/src/LineSegment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="e#1097#1098#0" expanded="true" />
+                <element signature="e#1124#1125#0" expanded="true" />
+                <element signature="e#1424#1425#0" expanded="true" />
+                <element signature="e#1461#1462#0" expanded="true" />
+                <element signature="e#1845#1846#0" expanded="true" />
+                <element signature="e#1902#1903#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="input50.png" pinned="false" current-in-tab="false">
@@ -47,41 +67,29 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="input56.png" pinned="false" current-in-tab="true">
+      <file leaf-file-name="input56.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CollinearPoints/input56.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CollinearPoints/src/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input10.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CollinearPoints/input10.txt">
+      <file leaf-file-name="input56.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CollinearPoints/input56.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="input9.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CollinearPoints/input9.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="input8.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CollinearPoints/input8.png">
+      <file leaf-file-name="input80.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CollinearPoints/input80.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="input8.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CollinearPoints/input8.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="input100.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CollinearPoints/input100.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="input200.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CollinearPoints/input200.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -119,14 +127,15 @@
         <option value="$PROJECT_DIR$/CollinearPoints/src/LineSegment.java" />
         <option value="$PROJECT_DIR$/CollinearPoints/src/Point.java" />
         <option value="$PROJECT_DIR$/CollinearPoints/src/BruteCollinearPoints.java" />
+        <option value="$PROJECT_DIR$/CollinearPoints/src/FastCollinearPoints.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1303" />
-    <option name="height" value="773" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="651" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -272,15 +281,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.4057508" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.4057508" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32970452" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.38258165" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.38258165" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.2857143" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.28460342" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39880952" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" visible="true" weight="0.0" />
@@ -315,31 +324,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Deque_and_Randomized_Queue/PercolationVisualizer.java" />
-    <entry file="jar://$USER_HOME$/algs4/algs4.jar!/edu/princeton/cs/algs4/StdOut.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/PrintWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="963" selection-start-line="963" selection-end-line="963" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="2559" selection-start-line="2559" selection-end-line="2559" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Percolation/input1-no.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Percolation/input1-no.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -531,21 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CollinearPoints/src/LineSegment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#1097#1098#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#1461#1462#0" expanded="true" />
-            <element signature="e#1845#1846#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CollinearPoints/input10.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -568,18 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CollinearPoints/src/BruteCollinearPoints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-            <element signature="e#1811#1812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CollinearPoints/input40.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -591,6 +548,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CollinearPoints/input56.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CollinearPoints/input56.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CollinearPoints/input80.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CollinearPoints/input100.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CollinearPoints/input200.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CollinearPoints/src/LineSegment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+            <element signature="e#1845#1846#0" expanded="true" />
+            <element signature="e#1902#1903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CollinearPoints/src/BruteCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CollinearPoints/src/FastCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
