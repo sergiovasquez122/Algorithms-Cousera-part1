@@ -7,6 +7,7 @@ import java.util.Arrays;
 
 public class FastCollinearPoints {
     private ArrayList<LineSegment> segments;
+
     public FastCollinearPoints(Point[] points){
         if(points == null) throw new IllegalArgumentException();
         for(int i = 0;i < points.length;++i){
@@ -24,6 +25,11 @@ public class FastCollinearPoints {
         }
 
         segments = new ArrayList<>();
+        if(local.length > 3){
+            for(Point p : local){
+                Arrays.sort(local, p.slopeOrder());
+            }
+        }
     }
 
     public int numberOfSegments(){
