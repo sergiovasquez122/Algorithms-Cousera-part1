@@ -37,7 +37,7 @@ public class BruteCollinearPoints {
                         Point s = local[l];
                         if(p.slopeTo(q) == p.slopeTo(r) && p.slopeTo(r) == p.slopeTo(s)){
                             Point[] temp = new Point[4];
-                            temp[0] =p;
+                            temp[0] = p;
                             temp[1] = q;
                             temp[2] = r;
                             temp[3] = s;
