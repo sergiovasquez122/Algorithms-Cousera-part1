@@ -40,6 +40,12 @@ public class Point implements Comparable<Point> {
     }
 
     public Comparator<Point> slopeOrder(){
-        return null;
+        Comparator<Point> t = new Comparator<Point>() {
+            @Override
+            public int compare(Point o1, Point o2) {
+                return Double.compare(slopeTo(o1), slopeTo(o2));
+            }
+        };
+        return t;
     }
 }
