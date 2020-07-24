@@ -1,4 +1,5 @@
 import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Arrays;
@@ -72,8 +73,24 @@ public class Board {
         board[x2][y2] = temp;
     }
 
+    private int findZeroPosition(){
+        for(int i = 0;i < board.length;++i){
+            for(int j = 0;j < board.length;++j){
+                if(board[i][j] == 0){
+                    return i * board.length + j + 1;
+                }
+            }
+        }
+        // (i - 1) * N + 1
+        return -1;
+    }
+
     public Iterable<Board> neighbors(){
-        return null;
+        int zero_pos = findZeroPosition();
+        Queue<Board> neighbors = new Queue<>();
+        int x = zero_pos / board.length;
+        int y = zero_pos % board.length;
+        return neighbors;
     }
 
     public Board twin(){
@@ -92,6 +109,10 @@ public class Board {
         }
     }
 
+    private int mapTo1D(int x, int y){
+        return x * board.length + 1 + y;
+    }
+
     public static void main(String[] args) {
         In in = new In(args[0]);
         int n = in.readInt();
@@ -100,7 +121,10 @@ public class Board {
             for (int j = 0; j < n; j++)
                 tiles[i][j] = in.readInt();
         Board initial = new Board(tiles);
-        StdOut.println(initial);
-        StdOut.println(initial.hamming());
+        for(int i = 1;i <= 9;++i){
+            StdOut.print((i - 1) / 3 + " ");
+            StdOut.print((i - 1) % 3);
+            StdOut.println();
+        }
     }
 }
