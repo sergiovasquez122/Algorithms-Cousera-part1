@@ -1,3 +1,5 @@
+import edu.princeton.cs.algs4.StdOut;
+
 import java.util.Arrays;
 
 public class Board {
@@ -7,7 +9,10 @@ public class Board {
     private int[][] board;
 
     public Board(int[][] tiles){
-
+        board = new int[tiles.length][tiles.length];
+        for(int i = 0;i < tiles.length;++i){
+            System.arraycopy(tiles[i], 0, board[i], 0, board.length);
+        }
     }
 
     public String toString(){
@@ -65,6 +70,8 @@ public class Board {
     }
 
     public static void main(String[] args) {
-
+        int arr[][] = {{0, 1}, {2, 3}};
+        Board b = new Board(arr);
+        StdOut.println(b);
     }
 }
