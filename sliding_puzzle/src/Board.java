@@ -92,7 +92,7 @@ public class Board {
         int[][] positions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
         for(int[] pos : positions){
             int newx = x + pos[0];
-            int newy = x + pos[1];
+            int newy = y + pos[1];
             if(isValid(newx, newy)){
                 swap(x, y, newx, newy);
                 Board b = new Board(board);
@@ -104,7 +104,17 @@ public class Board {
     }
 
     public Board twin(){
-        return null;
+        Board b;
+        if(board[0][0] != 0 && board[0][1] != 0){
+            swap(0, 0, 0, 1);
+            b = new Board(board);
+            swap(0, 0, 0, 1);
+        } else{
+            swap(1, 0, 1, 1);
+            b = new Board(board);
+            swap(1, 0, 1, 1);
+        }
+        return b;
     }
 
     private void computeHamming(){
@@ -131,10 +141,8 @@ public class Board {
             for (int j = 0; j < n; j++)
                 tiles[i][j] = in.readInt();
         Board initial = new Board(tiles);
-        for(int i = 1;i <= 9;++i){
-            StdOut.print((i - 1) / 3 + " ");
-            StdOut.print((i - 1) % 3);
-            StdOut.println();
+        for(Board b : initial.neighbors()){
+            StdOut.println(b);
         }
     }
 }
