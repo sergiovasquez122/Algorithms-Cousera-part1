@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Arrays;
@@ -70,8 +71,13 @@ public class Board {
     }
 
     public static void main(String[] args) {
-        int arr[][] = {{0, 1}, {2, 3}};
-        Board b = new Board(arr);
-        StdOut.println(b);
+        In in = new In(args[0]);
+        int n = in.readInt();
+        int[][] tiles = new int[n][n];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                tiles[i][j] = in.readInt();
+        Board initial = new Board(tiles);
+        StdOut.println(initial);
     }
 }
