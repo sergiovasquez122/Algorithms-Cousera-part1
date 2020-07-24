@@ -17,11 +17,20 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="137" column="31" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
+            <state relative-caret-position="330">
+              <caret line="138" column="16" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="puzzle3x3-33.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle3x3-33.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -33,11 +42,6 @@
       </file>
       <file leaf-file-name="puzzle2x2-00.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle2x2-00.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="puzzle2x2-01.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle2x2-01.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -108,6 +112,7 @@
         <option value="$PROJECT_DIR$/CollinearPoints/src/FastCollinearPoints.java" />
         <option value="$PROJECT_DIR$/CollinearPoints/src/BruteCollinearPoints.java" />
         <option value="$PROJECT_DIR$/sliding_puzzle/puzzle3x3-32.txt" />
+        <option value="$PROJECT_DIR$/sliding_puzzle/puzzle3x3-33.txt" />
         <option value="$PROJECT_DIR$/sliding_puzzle/src/Board.java" />
       </list>
     </option>
@@ -181,7 +186,7 @@
     <configuration name="Board" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Board" />
       <module name="sliding_puzzle" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/sliding_puzzle/puzzle3x3-32.txt" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/sliding_puzzle/puzzle3x3-33.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration name="BruteCollinearPoints" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -262,21 +267,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="715" y="24" width="651" height="744" extended-state="4" />
+    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26357827" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.12910798" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.31547618" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3716952" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32970452" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3705357" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.31726283" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.30357143" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39732143" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39657855" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -315,9 +320,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CollinearPoints/input6.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CollinearPoints/input6.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -514,10 +516,17 @@
     <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle00.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle3x3-33.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="137" column="31" selection-start-line="137" selection-start-column="31" selection-end-line="137" selection-end-column="31" />
+        <state relative-caret-position="330">
+          <caret line="138" column="16" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

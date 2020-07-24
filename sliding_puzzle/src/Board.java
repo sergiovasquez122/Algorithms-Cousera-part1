@@ -135,7 +135,7 @@ public class Board {
                 if(board[i][j] != 0 && board[i][j] != mapTo1D(i, j)){
                     int actual_x = (board[i][j] - 1) / board.length;
                     int actual_y = (board[i][j] - 1) % board.length;
-                    hamming += Math.abs(actual_x - i + 1) + Math.abs(actual_y - j + 1);
+                    manhattan += Math.abs(actual_x - i) + Math.abs(actual_y - j);
                 }
             }
         }
@@ -154,5 +154,6 @@ public class Board {
                 tiles[i][j] = in.readInt();
         Board initial = new Board(tiles);
         StdOut.println(initial.hamming());
+        StdOut.println(initial.manhattan());
     }
 }
