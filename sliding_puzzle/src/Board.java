@@ -153,6 +153,7 @@ public class Board {
             for (int j = 0; j < n; j++)
                 tiles[i][j] = in.readInt();
         Board initial = new Board(tiles);
+        StdOut.println(initial);
         StdOut.println(initial.hamming());
         StdOut.println(initial.manhattan());
     }
