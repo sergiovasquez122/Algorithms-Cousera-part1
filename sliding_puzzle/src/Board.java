@@ -52,11 +52,9 @@ public class Board {
         if(y == this){
             return true;
         }
-
         if(y == null){
             return false;
         }
-
         if(y.getClass() != this.getClass()){
             return false;
         }
