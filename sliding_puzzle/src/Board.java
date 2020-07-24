@@ -81,15 +81,25 @@ public class Board {
                 }
             }
         }
-        // (i - 1) * N + 1
         return -1;
     }
 
     public Iterable<Board> neighbors(){
         int zero_pos = findZeroPosition();
         Queue<Board> neighbors = new Queue<>();
-        int x = zero_pos / board.length;
-        int y = zero_pos % board.length;
+        int x = (zero_pos - 1) / board.length;
+        int y = (zero_pos - 1) % board.length;
+        int[][] positions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        for(int[] pos : positions){
+            int newx = x + pos[0];
+            int newy = x + pos[1];
+            if(isValid(newx, newy)){
+                swap(x, y, newx, newy);
+                Board b = new Board(board);
+                neighbors.enqueue(b);
+                swap(x, y, newx, newy);
+            }
+        }
         return neighbors;
     }
 
