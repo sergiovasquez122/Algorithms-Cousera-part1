@@ -101,7 +101,10 @@ public class Solver {
 
         @Override
         public int compareTo(Node o) {
-            return Integer.compare(hammingPriorityFunction(), o.hammingPriorityFunction());
+            if(manhattanPriorityFunction() == o.manhattanPriorityFunction()){
+                return Integer.compare(b.manhattan(), o.b.manhattan());
+            }
+            return Integer.compare(manhattanPriorityFunction(), o.manhattanPriorityFunction());
         }
     }
 
