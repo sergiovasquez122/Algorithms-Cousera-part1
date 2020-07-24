@@ -84,15 +84,17 @@ public class Solver {
         private Board b;
         private Node prev;
         private int moves;
+        private int manhattan;
 
         public Node(Board b, int moves, Node prev){
             this.b = b;
             this.moves = moves;
             this.prev = prev;
+            this.manhattan = b.manhattan();
         }
 
         private int manhattanPriorityFunction(){
-            return b.manhattan() + moves;
+            return manhattan + moves;
         }
 
         private int hammingPriorityFunction(){
@@ -102,7 +104,7 @@ public class Solver {
         @Override
         public int compareTo(Node o) {
             if(manhattanPriorityFunction() == o.manhattanPriorityFunction()){
-                return Integer.compare(b.manhattan(), o.b.manhattan());
+                return Integer.compare(manhattan, o.manhattan);
             }
             return Integer.compare(manhattanPriorityFunction(), o.manhattanPriorityFunction());
         }
