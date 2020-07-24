@@ -29,6 +29,8 @@ public class Solver {
             for(Board b : current.b.neighbors()){
                 if(current.prev != null && !current.prev.b.equal(b)){
                     frontier.insert(new Node(b, current.moves + 1, current));
+                } else if(current.prev == null){
+                    frontier.insert(new Node(b, current.moves + 1, current));
                 }
             }
         }
@@ -42,7 +44,7 @@ public class Solver {
         if(!isSolvable()){
             return -1;
         }
-        return moves.size();
+        return moves.size() - 1;
     }
 
     public Iterable<Board> solution(){
