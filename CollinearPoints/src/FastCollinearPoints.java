@@ -26,11 +26,49 @@ public class FastCollinearPoints {
 
         segments = new ArrayList<>();
         if(local.length > 3){
+            Point[] temp = local.clone();
             for(Point p : local){
-                Arrays.sort(local, p.slopeOrder());
+                Arrays.sort(temp, p.slopeOrder());
+                findSegments(temp, p);
             }
         }
     }
+
+    private void findSegments(Point[] local, Point p){
+        int start = 1;
+        double slope = p.slopeTo(local[1]);
+        for(int i = 2;i < local.length;++i){
+            double tempSlope = p.slopeTo(local[i]);
+            if(Double.compare(slope, tempSlope) != 0){
+                if(i - start >= 3){
+                    ArrayList<Point> temp = new ArrayList<>();
+                    temp.add(p);
+                    for(int j = start;j < i;++j){
+                        temp.add(local[j]);
+                    }
+                    temp.sort(null);
+                    if(temp.get(0).compareTo(p) == 0){
+                        segments.add(new LineSegment(p, temp.get(temp.size() - 1)));
+                    }
+                }
+                start = i;
+                slope = tempSlope;
+            }
+        }
+
+        if(local.length - start >= 3){
+            ArrayList<Point> temp = new ArrayList<>();
+            temp.add(p);
+            for(int j = start;j < local.length;++j){
+                temp.add(local[j]);
+            }
+            temp.sort(null);
+            if(temp.get(0).compareTo(p) == 0){
+                segments.add(new LineSegment(p, temp.get(temp.size() - 1)));
+            }
+        }
+    }
+
 
     public int numberOfSegments(){
         return segments.size();
