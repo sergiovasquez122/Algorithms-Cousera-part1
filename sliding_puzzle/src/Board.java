@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class Board {
 
-    private int hamming;
-    private int manhattan;
+    private int hamming = 0;
+    private int manhattan = 0;
     private int[][] board;
 
     public Board(int[][] tiles){
@@ -14,6 +14,8 @@ public class Board {
         for(int i = 0;i < tiles.length;++i){
             System.arraycopy(tiles[i], 0, board[i], 0, board.length);
         }
+
+        computeHamming();
     }
 
     public String toString(){
@@ -70,6 +72,18 @@ public class Board {
         return null;
     }
 
+    private void computeHamming(){
+        int counter = 1;
+        for(int i = 0;i < board.length;++i){
+            for(int j = 0;j < board.length;++j){
+                if(board[i][j] != 0 && board[i][j] != counter){
+                    hamming++;
+                }
+                counter++;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         In in = new In(args[0]);
         int n = in.readInt();
@@ -79,5 +93,6 @@ public class Board {
                 tiles[i][j] = in.readInt();
         Board initial = new Board(tiles);
         StdOut.println(initial);
+        StdOut.println(initial.hamming());
     }
 }
