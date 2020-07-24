@@ -1,6 +1,9 @@
 import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.MinPQ;
 import edu.princeton.cs.algs4.Stack;
 import edu.princeton.cs.algs4.StdOut;
+
+import java.util.Comparator;
 
 public class Solver {
 
@@ -52,4 +55,30 @@ public class Solver {
                 StdOut.println(board);
         }
     }
+
+    private class Node implements Comparable<Node> {
+        private Board b;
+        private Node prev;
+        private int moves;
+
+        public Node(Board b, int moves, Node prev){
+            this.b = b;
+            this.moves = moves;
+            this.prev = prev;
+        }
+
+        private int manhattanPriorityFunction(){
+            return b.manhattan() + moves;
+        }
+
+        private int hammingPriorityFunction(){
+            return b.hamming() + moves;
+        }
+
+        @Override
+        public int compareTo(Node o) {
+            return Integer.compare(hammingPriorityFunction(), o.hammingPriorityFunction());
+        }
+    }
+
 }
