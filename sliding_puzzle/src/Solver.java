@@ -23,14 +23,14 @@ public class Solver {
                     moves.push(x.b);
                 }
                 moves.push(x.b);
-                if(x.b.equal(inital)){
+                if(x.b.equals(inital)){
                     solvable = true;
                 }
                 return;
             }
 
             for(Board b : current.b.neighbors()){
-                if(current.prev != null && !current.prev.b.equal(b)){
+                if(current.prev != null && !current.prev.b.equals(b)){
                     frontier.insert(new Node(b, current.moves + 1, current));
                 } else if(current.prev == null){
                     frontier.insert(new Node(b, current.moves + 1, current));

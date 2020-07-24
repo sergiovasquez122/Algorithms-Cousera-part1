@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44013144-dd28-43d4-ab68-125b82cc454f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Percolation/production/sliding_puzzle/Solver$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/production/sliding_puzzle/Solver$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/production/sliding_puzzle/Solver.class" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/production/sliding_puzzle/Solver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sliding_puzzle/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/sliding_puzzle/src/Solver.java" afterDir="false" />
-    </list>
+    <list default="true" id="44013144-dd28-43d4-ab68-125b82cc454f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +14,8 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
+            <state relative-caret-position="2040">
+              <caret line="148" column="31" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,10 +26,9 @@
       <file leaf-file-name="Solver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#766#767#0" expanded="true" />
                 <element signature="e#797#798#0" expanded="true" />
                 <element signature="e#1610#1611#0" expanded="true" />
@@ -42,6 +37,19 @@
                 <element signature="e#1765#1766#0" expanded="true" />
                 <element signature="e#1826#1827#0" expanded="true" />
                 <element signature="e#1852#1853#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PuzzleChecker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/PuzzleChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,11 +87,6 @@
       </file>
       <file leaf-file-name="puzzle3x3-02.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle3x3-02.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="puzzle2x2-06.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle2x2-06.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -127,14 +130,15 @@
         <option value="$PROJECT_DIR$/sliding_puzzle/puzzle3x3-33.txt" />
         <option value="$PROJECT_DIR$/sliding_puzzle/src/Board.java" />
         <option value="$PROJECT_DIR$/sliding_puzzle/src/Solver.java" />
+        <option value="$PROJECT_DIR$/sliding_puzzle/src/PuzzleChecker.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="716" />
-    <option name="y" value="24" />
-    <option name="width" value="650" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="237" />
+    <option name="y" value="-4" />
+    <option name="width" value="653" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -195,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solver">
+  <component name="RunManager" selected="Application.PuzzleChecker">
     <configuration name="Board" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Board" />
       <module name="sliding_puzzle" />
@@ -214,16 +218,16 @@
       <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/CollinearPoints/input8.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
-    <configuration name="NearestNeighborVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NearestNeighborVisualizer" />
-      <module name="KD_TREE" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/KD_TREE/circle100.txt" />
+    <configuration name="PuzzleChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PuzzleChecker" />
+      <module name="sliding_puzzle" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/sliding_puzzle/puzzle00.txt $PROJECT_DIR$/sliding_puzzle/puzzle01.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-00.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-01.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-02.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-03.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-04.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-05.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-06.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-unsolvable1.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-unsolvable2.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-unsolvable3.txt $PROJECT_DIR$/sliding_puzzle/puzzle02.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-00.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-01.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-02.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-03.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-04.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-05.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-06.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-07.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-08.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-09.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-10.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-11.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-12.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-13.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-14.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-15.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-16.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-17.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-18.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-19.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-20.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-21.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-22.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-23.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-24.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-25.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-26.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-27.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-28.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-29.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-30.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-31.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-32.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-33.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-unsolvable.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-unsolvable1.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-unsolvable2.txt $PROJECT_DIR$/sliding_puzzle/puzzle03.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-00.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-01.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-02.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-03.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-04.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-05.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-06.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-07.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-08.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-09.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-10.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-11.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-12.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-13.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-14.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-15.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-16.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-17.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-18.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-19.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-20.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-21.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-22.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-23.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-24.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-25.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-26.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-27.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-28.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-29.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-30.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-31.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-32.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-33.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-34.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-35.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-36.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-37.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-38.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-39.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-40.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-41.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-42.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-43.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-44.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-45.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-46.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-47.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-48.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-49.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-50.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-78.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-80.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-unsolvable.txt $PROJECT_DIR$/sliding_puzzle/puzzle04.txt $PROJECT_DIR$/sliding_puzzle/puzzle05.txt $PROJECT_DIR$/sliding_puzzle/puzzle06.txt $PROJECT_DIR$/sliding_puzzle/puzzle07.txt $PROJECT_DIR$/sliding_puzzle/puzzle08.txt $PROJECT_DIR$/sliding_puzzle/puzzle09.txt $PROJECT_DIR$/sliding_puzzle/puzzle10.txt $PROJECT_DIR$/sliding_puzzle/puzzle11.txt $PROJECT_DIR$/sliding_puzzle/puzzle12.txt $PROJECT_DIR$/sliding_puzzle/puzzle13.txt $PROJECT_DIR$/sliding_puzzle/puzzle14.txt $PROJECT_DIR$/sliding_puzzle/puzzle15.txt $PROJECT_DIR$/sliding_puzzle/puzzle16.txt $PROJECT_DIR$/sliding_puzzle/puzzle17.txt $PROJECT_DIR$/sliding_puzzle/puzzle18.txt $PROJECT_DIR$/sliding_puzzle/puzzle19.txt $PROJECT_DIR$/sliding_puzzle/puzzle20.txt $PROJECT_DIR$/sliding_puzzle/puzzle21.txt $PROJECT_DIR$/sliding_puzzle/puzzle22.txt $PROJECT_DIR$/sliding_puzzle/puzzle23.txt $PROJECT_DIR$/sliding_puzzle/puzzle24.txt $PROJECT_DIR$/sliding_puzzle/puzzle25.txt $PROJECT_DIR$/sliding_puzzle/puzzle26.txt $PROJECT_DIR$/sliding_puzzle/puzzle27.txt $PROJECT_DIR$/sliding_puzzle/puzzle28.txt $PROJECT_DIR$/sliding_puzzle/puzzle29.txt $PROJECT_DIR$/sliding_puzzle/puzzle30.txt $PROJECT_DIR$/sliding_puzzle/puzzle31.txt $PROJECT_DIR$/sliding_puzzle/puzzle32.txt $PROJECT_DIR$/sliding_puzzle/puzzle33.txt $PROJECT_DIR$/sliding_puzzle/puzzle34.txt $PROJECT_DIR$/sliding_puzzle/puzzle35.txt $PROJECT_DIR$/sliding_puzzle/puzzle36.txt $PROJECT_DIR$/sliding_puzzle/puzzle37.txt $PROJECT_DIR$/sliding_puzzle/puzzle38.txt $PROJECT_DIR$/sliding_puzzle/puzzle39.txt $PROJECT_DIR$/sliding_puzzle/puzzle40.txt $PROJECT_DIR$/sliding_puzzle/puzzle41.txt $PROJECT_DIR$/sliding_puzzle/puzzle42.txt $PROJECT_DIR$/sliding_puzzle/puzzle43.txt $PROJECT_DIR$/sliding_puzzle/puzzle44.txt $PROJECT_DIR$/sliding_puzzle/puzzle45.txt $PROJECT_DIR$/sliding_puzzle/puzzle46.txt $PROJECT_DIR$/sliding_puzzle/puzzle47.txt $PROJECT_DIR$/sliding_puzzle/puzzle48.txt $PROJECT_DIR$/sliding_puzzle/puzzle49.txt $PROJECT_DIR$/sliding_puzzle/puzzle50.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration name="Solver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Solver" />
       <module name="sliding_puzzle" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/sliding_puzzle/puzzle3x3-unsolvable.txt" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/sliding_puzzle/puzzle00.txt $PROJECT_DIR$/sliding_puzzle/puzzle01.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-00.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-01.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-02.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-03.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-04.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-05.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-06.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-unsolvable1.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-unsolvable2.txt $PROJECT_DIR$/sliding_puzzle/puzzle2x2-unsolvable3.txt $PROJECT_DIR$/sliding_puzzle/puzzle02.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-00.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-01.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-02.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-03.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-04.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-05.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-06.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-07.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-08.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-09.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-10.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-11.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-12.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-13.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-14.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-15.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-16.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-17.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-18.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-19.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-20.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-21.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-22.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-23.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-24.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-25.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-26.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-27.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-28.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-29.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-30.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-31.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-32.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-33.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-unsolvable.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-unsolvable1.txt $PROJECT_DIR$/sliding_puzzle/puzzle3x3-unsolvable2.txt $PROJECT_DIR$/sliding_puzzle/puzzle03.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-00.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-01.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-02.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-03.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-04.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-05.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-06.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-07.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-08.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-09.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-10.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-11.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-12.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-13.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-14.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-15.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-16.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-17.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-18.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-19.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-20.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-21.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-22.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-23.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-24.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-25.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-26.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-27.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-28.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-29.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-30.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-31.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-32.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-33.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-34.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-35.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-36.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-37.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-38.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-39.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-40.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-41.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-42.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-43.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-44.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-45.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-46.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-47.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-48.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-49.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-50.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-78.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-80.txt $PROJECT_DIR$/sliding_puzzle/puzzle4x4-unsolvable.txt $PROJECT_DIR$/sliding_puzzle/puzzle04.txt $PROJECT_DIR$/sliding_puzzle/puzzle05.txt $PROJECT_DIR$/sliding_puzzle/puzzle06.txt $PROJECT_DIR$/sliding_puzzle/puzzle07.txt $PROJECT_DIR$/sliding_puzzle/puzzle08.txt $PROJECT_DIR$/sliding_puzzle/puzzle09.txt $PROJECT_DIR$/sliding_puzzle/puzzle10.txt $PROJECT_DIR$/sliding_puzzle/puzzle11.txt $PROJECT_DIR$/sliding_puzzle/puzzle12.txt $PROJECT_DIR$/sliding_puzzle/puzzle13.txt $PROJECT_DIR$/sliding_puzzle/puzzle14.txt $PROJECT_DIR$/sliding_puzzle/puzzle15.txt $PROJECT_DIR$/sliding_puzzle/puzzle16.txt $PROJECT_DIR$/sliding_puzzle/puzzle17.txt $PROJECT_DIR$/sliding_puzzle/puzzle18.txt $PROJECT_DIR$/sliding_puzzle/puzzle19.txt $PROJECT_DIR$/sliding_puzzle/puzzle20.txt $PROJECT_DIR$/sliding_puzzle/puzzle21.txt $PROJECT_DIR$/sliding_puzzle/puzzle22.txt $PROJECT_DIR$/sliding_puzzle/puzzle23.txt $PROJECT_DIR$/sliding_puzzle/puzzle24.txt $PROJECT_DIR$/sliding_puzzle/puzzle25.txt $PROJECT_DIR$/sliding_puzzle/puzzle26.txt $PROJECT_DIR$/sliding_puzzle/puzzle27.txt $PROJECT_DIR$/sliding_puzzle/puzzle28.txt $PROJECT_DIR$/sliding_puzzle/puzzle29.txt $PROJECT_DIR$/sliding_puzzle/puzzle30.txt $PROJECT_DIR$/sliding_puzzle/puzzle31.txt $PROJECT_DIR$/sliding_puzzle/puzzle32.txt $PROJECT_DIR$/sliding_puzzle/puzzle33.txt $PROJECT_DIR$/sliding_puzzle/puzzle34.txt $PROJECT_DIR$/sliding_puzzle/puzzle35.txt $PROJECT_DIR$/sliding_puzzle/puzzle36.txt $PROJECT_DIR$/sliding_puzzle/puzzle37.txt $PROJECT_DIR$/sliding_puzzle/puzzle38.txt $PROJECT_DIR$/sliding_puzzle/puzzle39.txt $PROJECT_DIR$/sliding_puzzle/puzzle40.txt $PROJECT_DIR$/sliding_puzzle/puzzle41.txt $PROJECT_DIR$/sliding_puzzle/puzzle42.txt $PROJECT_DIR$/sliding_puzzle/puzzle43.txt $PROJECT_DIR$/sliding_puzzle/puzzle44.txt $PROJECT_DIR$/sliding_puzzle/puzzle45.txt $PROJECT_DIR$/sliding_puzzle/puzzle46.txt $PROJECT_DIR$/sliding_puzzle/puzzle47.txt $PROJECT_DIR$/sliding_puzzle/puzzle48.txt $PROJECT_DIR$/sliding_puzzle/puzzle49.txt $PROJECT_DIR$/sliding_puzzle/puzzle50.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -250,19 +254,19 @@
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
     <list>
-      <item itemvalue="Application.NearestNeighborVisualizer" />
       <item itemvalue="Application.BruteCollinearPoints" />
       <item itemvalue="Application.FastCollinearPoints" />
       <item itemvalue="Application.Board" />
       <item itemvalue="Application.Solver" />
+      <item itemvalue="Application.PuzzleChecker" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PuzzleChecker" />
         <item itemvalue="Application.Solver" />
         <item itemvalue="Application.Board" />
         <item itemvalue="Application.FastCollinearPoints" />
         <item itemvalue="Application.BruteCollinearPoints" />
-        <item itemvalue="Application.NearestNeighborVisualizer" />
       </list>
     </recent_temporary>
   </component>
@@ -280,19 +284,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
-    <editor active="true" />
+    <frame x="715" y="24" width="651" height="744" extended-state="4" />
     <layout>
       <window_info id="Designer" order="1" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13223787" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.26996806" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.31547618" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32970452" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.36755952" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.40124416" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.30326593" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.29017857" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39583334" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" visible="true" weight="0.0" />
@@ -339,24 +342,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CollinearPoints/src/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CollinearPoints/src/FastCollinearPoints.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -522,16 +507,6 @@
     <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle2x2-06.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle00.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -553,12 +528,32 @@
     <entry file="file://$PROJECT_DIR$/sliding_puzzle/puzzle3x3-02.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/Solver.java">
+    <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="2040">
+          <caret line="148" column="31" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/PuzzleChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sliding_puzzle/src/Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+          <folding>
             <element signature="e#766#767#0" expanded="true" />
             <element signature="e#797#798#0" expanded="true" />
             <element signature="e#1610#1611#0" expanded="true" />

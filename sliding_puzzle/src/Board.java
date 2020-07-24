@@ -33,7 +33,7 @@ public class Board {
         return result.toString();
     }
 
-    public int dimensions(){
+    public int dimension(){
         return board.length;
     }
 
@@ -49,7 +49,7 @@ public class Board {
         return hamming == 0;
     }
 
-    public boolean equal(Object y){
+    public boolean equals(Object y){
         if(y == this){
             return true;
         }
