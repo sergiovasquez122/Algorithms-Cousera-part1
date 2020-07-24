@@ -1,4 +1,8 @@
 public class Board {
+
+    private int hamming;
+    private int manhattan;
+
     public Board(int[][] tiles){
 
     }
@@ -11,15 +15,15 @@ public class Board {
     }
 
     public int hamming(){
-
+        return hamming;
     }
 
     public int manhattan(){
-
+        return manhattan;
     }
 
     public boolean isGoal(){
-
+        return hamming == 0;
     }
 
     public boolean equal(Object y){
