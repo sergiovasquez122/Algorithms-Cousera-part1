@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Percolation/8_puzzle.iml" filepath="$PROJECT_DIR$/Percolation/8_puzzle.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Algorithms-Cousera-part1.iml" filepath="$PROJECT_DIR$/.idea/Algorithms-Cousera-part1.iml" />
       <module fileurl="file://$PROJECT_DIR$/CollinearPoints/CollinearPoints.iml" filepath="$PROJECT_DIR$/CollinearPoints/CollinearPoints.iml" />
       <module fileurl="file://$PROJECT_DIR$/KD_TREE/KD_TREE.iml" filepath="$PROJECT_DIR$/KD_TREE/KD_TREE.iml" />
       <module fileurl="file://$PROJECT_DIR$/Percolation/Percolation.iml" filepath="$PROJECT_DIR$/Percolation/Percolation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sliding_puzzle/sliding_puzzle.iml" filepath="$PROJECT_DIR$/sliding_puzzle/sliding_puzzle.iml" />
     </modules>
   </component>
 </project>
