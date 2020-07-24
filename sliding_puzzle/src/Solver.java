@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Solver {
 
-    private boolean solvable;
+    private boolean solvable = false;
     private Stack<Board> moves;
     public Solver(Board inital){
         if(inital == null){
@@ -14,6 +14,7 @@ public class Solver {
         moves = new Stack<>();
         MinPQ<Node> frontier = new MinPQ<>();
         frontier.insert(new Node(inital, 0, null));
+        frontier.insert(new Node(inital.twin(), 0, null));
         while(!frontier.isEmpty()){
             Node current = frontier.delMin();
             if(current.b.isGoal()){
@@ -22,7 +23,9 @@ public class Solver {
                     moves.push(x.b);
                 }
                 moves.push(x.b);
-                solvable = true;
+                if(x.b.equal(inital)){
+                    solvable = true;
+                }
                 return;
             }
 
