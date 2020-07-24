@@ -15,8 +15,8 @@ public class Board {
         for(int i = 0;i < tiles.length;++i){
             System.arraycopy(tiles[i], 0, board[i], 0, board.length);
         }
-
         computeHamming();
+        computeManhattan();
     }
 
     public String toString(){
@@ -129,6 +129,18 @@ public class Board {
         }
     }
 
+    private void computeManhattan(){
+        for(int i = 0;i < board.length;++i){
+            for(int j = 0;j < board.length;++j){
+                if(board[i][j] != 0 && board[i][j] != mapTo1D(i, j)){
+                    int actual_x = (board[i][j] - 1) / board.length;
+                    int actual_y = (board[i][j] - 1) % board.length;
+                    hamming += Math.abs(actual_x - i + 1) + Math.abs(actual_y - j + 1);
+                }
+            }
+        }
+    }
+
     private int mapTo1D(int x, int y){
         return x * board.length + 1 + y;
     }
@@ -141,8 +153,6 @@ public class Board {
             for (int j = 0; j < n; j++)
                 tiles[i][j] = in.readInt();
         Board initial = new Board(tiles);
-        for(Board b : initial.neighbors()){
-            StdOut.println(b);
-        }
+        StdOut.println(initial.hamming());
     }
 }
