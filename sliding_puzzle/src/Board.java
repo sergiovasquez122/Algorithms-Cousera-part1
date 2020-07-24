@@ -62,6 +62,16 @@ public class Board {
         return Arrays.deepEquals(board, b.board);
     }
 
+    private boolean isValid(int x, int y){
+        return 0 <= x && x < board.length && 0 <= y && y < board.length;
+    }
+
+    private void swap(int x1, int y1, int x2, int y2){
+        int temp = board[x1][y1];
+        board[x1][y1] = board[x2][y2];
+        board[x2][y2] = temp;
+    }
+
     public Iterable<Board> neighbors(){
         return null;
     }
