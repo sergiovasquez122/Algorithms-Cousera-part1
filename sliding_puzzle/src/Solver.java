@@ -3,8 +3,6 @@ import edu.princeton.cs.algs4.MinPQ;
 import edu.princeton.cs.algs4.Stack;
 import edu.princeton.cs.algs4.StdOut;
 
-import java.util.Comparator;
-
 public class Solver {
 
     private boolean solvable;
@@ -12,6 +10,27 @@ public class Solver {
     public Solver(Board inital){
         if(inital == null){
             throw new IllegalArgumentException();
+        }
+        moves = new Stack<>();
+        MinPQ<Node> frontier = new MinPQ<>();
+        frontier.insert(new Node(inital, 0, null));
+        while(!frontier.isEmpty()){
+            Node current = frontier.delMin();
+            if(current.b.isGoal()){
+                Node x;
+                for(x = current;x.prev != null;x = x.prev){
+                    moves.push(x.b);
+                }
+                moves.push(x.b);
+                solvable = true;
+                return;
+            }
+
+            for(Board b : current.b.neighbors()){
+                if(current.prev != null && !current.prev.b.equal(b)){
+                    frontier.insert(new Node(b, current.moves + 1, current));
+                }
+            }
         }
     }
 
